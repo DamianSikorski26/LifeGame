@@ -1,0 +1,45 @@
+.tile{
+    border: solid 1px lightgray;
+    &:hover{
+        background-color: rgb(170, 170, 170);
+    }
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.container{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    border: solid 1px lightcoral;
+    grid-template-columns: repeat(50,12px);
+    margin: auto;
+    
+}
+
+button{
+    padding: 30px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.button-container{
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+}
