@@ -7,6 +7,7 @@ let numberOfTiles = numberOfColumns * numberOfColumns;
 const fragment = document.createDocumentFragment();
 let startButton = document.getElementById("start");
 let pauseButton = document.getElementById("pause");
+let resetButton = document.getElementById("reset");
 let interval;
 
 container.style = `grid-template-columns: repeat(${numberOfColumns},${sizeOfTiles + 2}px);
@@ -28,7 +29,9 @@ container.appendChild(fragment);
 container.addEventListener("click",(e) => {
   
   if (e.target.classList.contains("tile")){
+    clearInterval(interval)
     e.target.classList.toggle("black");
+    
   }
 
 })
@@ -148,6 +151,15 @@ startButton.addEventListener("click",()=>{
 })  
 
 pauseButton.addEventListener("click",function(e){
+  clearInterval(interval);
+})
+
+resetButton.addEventListener("click",function(e){
+  clearInterval(interval);
+  let array = document.querySelectorAll(".tile");
+  array.forEach(function(element){
+    element.classList.remove("black");
+  } )
   clearInterval(interval);
 })
 

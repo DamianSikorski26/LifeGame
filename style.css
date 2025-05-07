@@ -33,22 +33,31 @@ span{
     font-family: 'Courier New', Courier, monospace;
     border-radius: 20px;
     cursor: pointer;
-}
 
+    
+    
+}
+i{
+    color: rgb(73, 73, 73);
+    transition: .1s all linear;
+    &:hover{
+        color: rgb(175, 175, 175);
+    }
+}
 .button-container{
     width: fit-content;
-    
-    
     display: flex;
+    gap: 30px;
     justify-content: space-between;
-    background-color: rgb(240, 142, 183);
-    padding: 20px;
+    background-color: rgb(159, 236, 255);
+    padding: 20px 30px;
     border-radius: 20px;
     position: fixed;
     bottom : 30px;
     left: 50%;
     right: 50%;
     translate: -50% ;
+    box-shadow: 3px 3px 10px  rgb(107, 107, 107);
     
     
     
