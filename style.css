@@ -62,3 +62,42 @@ i{
     
     
 }
+#settingsContainer{
+    width: 300px;
+    background-color:rgb(159, 236, 255) ;
+    padding: 15px;
+    box-shadow: 3px 3px 10px  rgb(107, 107, 107);
+    border-radius: 20px;
+    font-size: 18px;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    
+    left: 50%;
+    bottom: 50px;
+}
+
+label{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+input{
+    width: 80px;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+}
+#settings{
+    position: relative;
+}
+
+.d-none{
+    display: none;
+}
+
+#Regenerate{
+    grid-column: span 2;
+    width: 100%;
+    padding: 10px;
+}

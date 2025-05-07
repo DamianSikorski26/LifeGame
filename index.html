@@ -16,8 +16,30 @@
     <span id="start"><i class="fa-solid fa-play"></i></span>
     <span id="pause"><i class="fa-solid fa-pause"></i></span>
     <span id="reset"><i class="fa-solid fa-rotate"></i></span>
-    <span id="settings"><i class="fa-solid fa-gear"></i></span>
+    <span id="settings">
+    <div id="settingsContainer" class="d-none">
+      <form action="settingFrom">
+        
+          <label for="speed">Speed</label>
+          <input type="range" id="speed" min="10" max="3000">
+        
+        
+          <label for="colums">colums</label>
+          <input type="number" id="colums">
+        
+        
+          <label for="tileSizeInput">Tile size (pixels)</label>
+          <input type="number" id="tileSizeInput">
+          <input type="submit" value="Regenerate" id="Regenerate">
+        
+      </form>
+    </div>
+    <i class="fa-solid fa-gear">
+
+    </i></span>
   </div>
+
+  
 
   <script type="module" src="training.js"></script>
 </body>

@@ -8,7 +8,13 @@ const fragment = document.createDocumentFragment();
 let startButton = document.getElementById("start");
 let pauseButton = document.getElementById("pause");
 let resetButton = document.getElementById("reset");
+let settingButton = document.getElementById("settings");
 let interval;
+let speedRange = document.getElementById('speed');
+let columns = document.getElementById('colums');
+let tileSizeInput = document.getElementById('tileSizeInput');
+let form = document.getElementById("settingsContainer");
+
 
 container.style = `grid-template-columns: repeat(${numberOfColumns},${sizeOfTiles + 2}px);
                     width: ${numberOfColumns*(sizeOfTiles+2)}px;
@@ -161,6 +167,10 @@ resetButton.addEventListener("click",function(e){
     element.classList.remove("black");
   } )
   clearInterval(interval);
+})
+
+settingButton.addEventListener("click",function(e){
+  form.classList.toggle("d-none");
 })
 
 
