@@ -1,6 +1,6 @@
 
 let container = document.querySelector(".container");
-let sizeOfTiles = 5;
+let sizeOfTiles = 10;
 let numberOfColumns = 100;
 let animationInterval = 200;
 let numberOfTiles = numberOfColumns * numberOfColumns;
